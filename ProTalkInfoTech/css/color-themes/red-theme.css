@@ -1,0 +1,272 @@
+/*Theme Color File*/
+
+.featured-item-box .single-box .icon-holder span:before,
+.single-service-item .icon-box span:before,
+.company-featured-box li .single-box .icon-holder span:before,
+.single-project-item .img-holder .overlay-style-one .box .content span,
+.testimonial-section .testimonial-outer .quote-icon span:before,
+.footer-bottom-area .footer-bottom .footer-botton-left p span:before,
+.single-footer-widget .usefull-links li a:hover,
+.single-footer-widget .latest-post .single-post .text-holder a.post-title:hover,
+.contact-info-box .social-icon-box .social-icon li a:hover i,
+.advantages-area .advantages-box li .icon-box span:before,
+.single-covered-item .text-holder .icon-holder span:before,
+.faq-content-area .tab-menu li .nav-link.active, 
+.faq-content-area .tab-menu li:hover .nav-link,
+.c100 > span::before,
+.main-project-area.project-v2 .single-project-item .img-holder .overlay-style-one .box .content a.link i,
+.main-project-area.project-v2 .single-project-item .title-holder span,
+.single-modern-project .text-holder .know-more:hover,
+#blog-area .single-blog-post .overlay-style-one .box .content a:hover,
+.single-sidebar .comment-box .single-box .img-holder .overlay-style-one .box .content a:hover i,
+.review-box ul li i,
+.single-shop-content .content-box .review-box ul li i,
+.sidebar-wrapper .single-sidebar .latest-product li .title-holder .review-box li i,
+
+
+
+a,
+.theme_color,
+.single-blog-post .text-holder .top .date-box h4,
+.single-blog-post .text-holder .readmore a,
+.rev_slider_wrapper .slide-content .text,
+.single-blog-post .text-holder .top .meta-box .meta-info li a:hover,
+.single-blog-post .text-holder .blog-title:hover,
+.footer-bottom-area .footer-bottom .copyright-text p a,
+.footer-bottom-area .footer-bottom .footer-menu ul li a:hover,
+.featured-box ul .single-item .text-holder span,
+.history-area .owl-theme .owl-nav [class*="owl-"]:hover,
+.single-team-member .text-holder span,
+.single-team-member .text-holder ul li span:before,
+.project-filter li.active span, 
+.project-filter li:hover span,
+.project-single-area .project-info ul li b,
+.project-single-area .legal-work-content span,
+.project-single-area .project-result .text-holder ul li i,
+.accordion-box .accordion .accord-btn.active h4,
+.accordion-box .accordion .accord-btn.active:after,
+.testimonial-page .single-testimonial-box .top .title span,
+.not-found-content p,
+.left-sidebar .single-sidebar .service-list-box .page-links li a:hover, 
+.left-sidebar .single-sidebar .service-list-box .page-links li a.active,
+.contact-author-info ul li .icon-holder span:before,
+.service-tab-box .tab-menu li.active span, 
+.service-tab-box .tab-menu li:hover span,
+.service-tab-box .tab-content-box .single-tab-content .bottom-content ul li i,
+.single-sidebar .categories li a:hover,
+.single-sidebar .popular-post li .title-holder a:hover .post-title,
+.single-sidebar .popular-post li .title-holder .post-date i,
+.single-sidebar .popular-post li .img-holder .overlay-style-one .box .content a:hover i,
+.blog-single-area .middle-content-box .text-box h5,
+.blog-single-area .tag-box .tag p,
+.blog-single-area .author-box .text-holder .social-link li a:hover i,
+.blog-single-area .comment-box .single-comment-box .text-holder .top .review-box ul li i,
+.blog-single-area .add-comment-box .add-rating-box ul li a:hover i,
+.single-product-item .img-holder .cart-option li a:hover,
+.single-product-item .title-holder .top .left .rate,
+.sidebar-wrapper .single-sidebar .latest-product li:hover .title-holder h4,
+.sidebar-wrapper .single-sidebar .latest-product li .title-holder h5,
+.single-shop-content .content-box span.price,
+.single-shop-content .content-box .location-box form span,
+.product-tab-box .tab-menu li.active a, 
+.product-tab-box .tab-menu li:hover a,
+.product-tab-box .tab-content .review-box .single-review-box .text-holder .top .review-box ul li i,
+.product-tab-box .tab-content .review-form .add-rating-box ul li:hover a i,
+.cart-area .cart-table tbody tr .sub-total,
+.cart-total-table li span.col b,
+.checkout-area .exisitng-customer h5 a,
+.checkout-area .coupon h5 a,
+.checkout-area .create-acc .checkbox label,
+.checkout-area .table .cart-table tbody tr td.price,
+.cart-total .payment-options .option-block .checkbox label span b,
+.login-register-area .form a.forgot-password,
+.main-menu .navigation > li:hover > a, 
+.single-service-item .text-holder a.readmore:hover, 
+.main-menu .navigation > li.current > a{
+	color:#FF4136;
+}
+
+
+
+
+
+/*Background Color*/
+.featured-item-box .single-box .overlay-content-box .border,
+.company-featured-box li.bg-one,
+.single-project-item .img-holder .overlay-style-one .box .content .inner-content:before,
+.appointment-img-holder .subscribe-form-box .newsletter-form button,
+.outer-search-box .seach-toggle,
+.outer-search-box .seach-toggle:hover, 
+.outer-search-box .seach-toggle.active,
+.main-menu .navigation li ul li a:before,
+.mission-vision-box .single-box .text-holder .title .border,
+.single-history .date-box:after,
+.single-covered-item .text-holder b,
+.faq-content-area .tab-menu li .nav-link.active:before, 
+.faq-content-area .tab-menu li:hover .nav-link:before,
+.single-testimonial-item:hover .img-holder,
+.consultation-form-box .appointment-form-box button,
+.main-project-area.project-v2 .single-project-item .img-holder .overlay-style-one .box .content a.link:hover i,
+.single-modern-project .text-holder span,
+.project-single-area .project-analysis .analysis-list li .iocn-box .box,
+#blog-area .single-blog-post .overlay-style-one .box .content a .border,
+
+
+
+.main-menu .navigation li a:after,
+.btn-one,
+.tparrows:hover,
+.sec-title .border:before,
+.sec-title .border:after,
+.single-service-item .img-holder .overlay-style-one .box .content a:hover i,
+.services-area .owl-dots .owl-dot.active,
+.services-area .owl-dots .owl-dot:hover,
+.working-area .single-item:before,
+.brand-area .owl-theme .owl-nav .owl-prev:hover,
+.brand-area .owl-theme .owl-nav .owl-next:hover,
+.single-blog-post .img-holder .overlay-style-one .box .content a:hover i,
+.customer-feedback .owl-dots .owl-dot,
+.contact-info-box .owl-dots .owl-dot.active,
+.contact-info-box .owl-dots .owl-dot:hover,
+.scroll-to-top:hover,
+.single-history .date-box:before,
+.single-team-member .img-holder .overlay-style-one .box .content ul li a:hover i,
+.team-area .owl-dot-style-one .owl-dots .owl-dot.active,
+.team-area .owl-dot-style-one .owl-dots .owl-dot:hover,
+.search-box,
+.post-pagination li.active a, 
+.post-pagination li:hover a, 
+.not-found-content .search-form input[type="text"]:focus + button, 
+.not-found-content .search-form button:hover,
+.left-sidebar .single-sidebar .service-list-box .page-links li a:hover:before, 
+.left-sidebar .single-sidebar .service-list-box .page-links li a.active:before,
+.explore-service-box .text-holder .inner-text ul li .icon-box:after,
+.left-sidebar .single-sidebar .service-brochures .brochures-dwn-link li a:hover,
+.sidebar-wrapper .single-sidebar .search-form button,
+.single-sidebar .popular-tag li a:hover,
+.sociallinks-style-two li a:hover i,
+.single-sidebar .price-ranger .ui-slider-handle,
+.single-sidebar .price-ranger .ui-slider .ui-slider-range,
+.sidebar-wrapper .single-sidebar .product-tag li a:hover,
+.cart-area .cart-table tbody .available-info .icon,
+.cart-bottom .sec-title-two .border,
+.checkout-area .exisitng-customer:before,
+.checkout-area .coupon:before,
+.contact-page-author-info{
+	background-color:#FF4136;
+}
+
+
+
+
+
+/*Border Color*/
+.company-featured-box li.bg-one,
+.testimonial-section .testimonial-outer .quote-icon span:before,
+.faq-content-area .tab-menu li .nav-link.active, 
+.faq-content-area .tab-menu li:hover .nav-link,
+.single-testimonial-item:hover .img-holder,
+.rev_slider_wrapper .slide-content,
+
+
+
+.tparrows:hover,
+.services-area .owl-dots .owl-dot.active,
+.services-area .owl-dots .owl-dot:hover,
+.customer-feedback .owl-dots .owl-dot,
+.consultation-form-box input[type="text"]:focus,
+.consultation-form-box input[type="email"]:focus,
+.contact-info-box .owl-dots .owl-dot.active,
+.contact-info-box .owl-dots .owl-dot:hover,
+.scroll-to-top:hover,
+.history-area .owl-theme .owl-nav [class*="owl-"]:hover,
+.single-team-member .img-holder .overlay-style-one .box .content ul li a:hover i,
+.team-area .owl-dot-style-one .owl-dots .owl-dot.active,
+.team-area .owl-dot-style-one .owl-dots .owl-dot:hover,
+.post-pagination li.active a, 
+.post-pagination li:hover a,
+.accordion-box .accordion .accord-btn.active:after,
+.faq-question-form-area .question-form form input[type="text"]:focus,
+.faq-question-form-area .question-form form input[type="email"]:focus,
+.faq-question-form-area .question-form form textarea:focus,
+.not-found-content .search-form input[type="text"]:focus,
+.single-sidebar .categories li a:hover::before,
+.single-sidebar .popular-tag li a:hover,
+.sociallinks-style-two li a:hover i,
+.blog-single-area .add-comment-box #add-comment-form input[type="text"]:focus,
+.blog-single-area .add-comment-box #add-comment-form input[type="email"]:focus,
+.blog-single-area .add-comment-box #add-comment-form textarea:focus,
+.single-sidebar .price-ranger .ui-slider-handle,
+.sidebar-wrapper .single-sidebar .product-tag li a:hover,
+.product-tab-box .tab-content .review-form form input[type="text"]:focus,
+.product-tab-box .tab-content .review-form form input[type="email"]:focus,
+.product-tab-box .tab-content .review-form form textarea:focus,
+.cart-middle .apply-coupon input[type="text"]:focus,
+.cart-bottom .calculate-shipping input[type="text"]:focus,
+.checkout-area .form form .field-input input[type="text"]:focus,
+.checkout-area .form form .field-input textarea:focus,
+.login-register-area .form .input-field input[type="text"]:focus,
+.contact-form form input[type="text"]:focus,
+.contact-form form input[type="email"]:focus,
+.contact-form form textarea:focus{
+	border-color:#FF4136;
+}
+
+
+
+
+
+/* Rgba Background color **/
+.slogan-area::before,
+
+
+
+.callto-action-area:before,
+.welcome-right-box .single-item .static-overlay,
+.owl-nav-style-two.owl-theme .owl-nav [class*="owl-"]:hover,
+.single-service-item .img-holder .overlay-style-one .box .content a i,
+.single-service-item .title-box,
+.brand-area .video-holder:hover .overlay-gallery,
+.single-blog-post .img-holder .overlay-style-one .box .content a i,
+.breadcrumb-area::before{
+    background: rgba(255, 65, 54, 0.90);
+}
+
+
+
+
+
+@media only screen and (max-width: 991px){
+/* Background Color */    
+.main-menu .navbar-header .navbar-toggle,
+.main-menu .navbar-collapse > .navigation > li > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > a,
+.main-menu .navbar-collapse > .navigation > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+.header-style-two.inner-header .main-menu .navigation > li > a{
+    background-color:#FF4136;
+}
+ 
+    
+.main-menu .navbar-collapse > .navigation > li > a:hover,
+.main-menu .navbar-collapse > .navigation > li > a:active,
+.main-menu .navbar-collapse > .navigation > li > a:focus,
+.main-menu .navbar-collapse > .navigation > li.current > a,
+.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
+    background: #0e1b38;    
+}    
+  
+    
+/* Border Color */      
+.main-menu .navbar-header .navbar-toggle{
+    border-color:#FF4136;
+}    
+.main-menu .navbar-collapse > .navigation > li,
+.main-menu .navbar-collapse > .navigation > li > ul > li,    
+.main-menu .navbar-collapse > .navigation > li:last-child,
+.main-menu .navbar-collapse > .navigation > li > ul > li:last-child{
+    border-color: #e32c22;        
+}    
+
+    
+}

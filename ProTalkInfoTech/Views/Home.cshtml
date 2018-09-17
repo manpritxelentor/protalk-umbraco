@@ -1,0 +1,1098 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Master.cshtml";
+}
+
+<!--Start rev slider wrapper-->
+<section class="rev_slider_wrapper">
+    <div id="slider1" class="rev_slider" data-version="5.0">
+        <ul>
+            @if (Model.Content.FeaturedSlides.Count() > 0)
+            {
+                foreach (Slide slide in Model.Content.FeaturedSlides)
+                {
+                    <li data-transition="fade">
+                        <img src="@slide.SlideImage.Url" alt="" width="1920" height="780" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+
+                        <div class="tp-caption  tp-resizeme"
+                             data-x="left" data-hoffset="0"
+                             data-y="top" data-voffset="195"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;"
+                             data-splitin="none"
+                             data-splitout="none"
+                             data-responsive_offset="on"
+                             data-start="1500">
+                            <div class="slide-content left-slide">
+                                <h3>@slide.SlideHeader</h3>
+                                <div class="big-title">@slide.SlideTitle</div>
+                                <div class="text">@slide.SlideText</div>
+                                <div class="btns-box">
+                                    <a href="about.html" class="btn-one pdone">Read More</a>&ensp;
+                                    <a href="contact.html" class="btn-two pdtwo">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                }
+            }
+            @*<li data-transition="fade">
+                    <img src="~/Media/1070/2.jpg" alt="" width="1920" height="780" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+
+                    <div class="tp-caption  tp-resizeme"
+                         data-x="right" data-hoffset="0"
+                         data-y="top" data-voffset="195"
+                         data-transform_idle="o:1;"
+                         data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
+                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                         data-mask_in="x:[100%];y:0;s:inherit;e:inherit;"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-responsive_offset="on"
+                         data-start="1500">
+                        <div class="slide-content right-slide">
+                            <h3>The fastest way to achive</h3>
+                            <div class="big-title">Success</div>
+                            <div class="text">Over 24 years experience knowledge international standards<br> technologicaly changes and industrial systems.</div>
+                            <div class="btns-box">
+                                <a href="about.html" class="btn-one pdone">Read More</a>&ensp;
+                                <a href="contact.html" class="btn-two pdtwo">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li data-transition="fade">
+                    <img src="~/Media/1071/3.jpg" alt="" width="1920" height="780" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+
+                    <div class="tp-caption  tp-resizeme"
+                         data-x="left" data-hoffset="0"
+                         data-y="top" data-voffset="195"
+                         data-transform_idle="o:1;"
+                         data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
+                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                         data-mask_in="x:[100%];y:0;s:inherit;e:inherit;"
+                         data-splitin="none"
+                         data-splitout="none"
+                         data-responsive_offset="on"
+                         data-start="1500">
+                        <div class="slide-content left-slide">
+                            <h3>Trading solution for</h3>
+                            <div class="big-title">Investors</div>
+                            <div class="text">Over 24 years experience and knowledge international standards<br> technologicaly changes and industrial systems.</div>
+                            <div class="btns-box">
+                                <a href="about.html" class="btn-one pdone">Read More</a>&ensp;
+                                <a href="contact.html" class="btn-two pdtwo">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>*@
+        </ul>
+    </div>
+</section>
+<!--End rev slider wrapper-->
+<!--Start choose area-->
+<section class="choose-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="inner-content parallax-bg-one" style="background-image:url(Media/1129/choose-bg.jpg);">
+                    <div class="sec-title text-center">
+                        <h1 class="white-color">Why Choose US</h1>
+                        <div class="border center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="featured-item-box">
+                    <div class="row">
+                        <!--Start single box-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="single-box text-center">
+                                <div class="icon-holder">
+                                    <span class="icon-people"></span>
+                                </div>
+                                <h3>We are Professional</h3>
+                                <span>Consultant</span>
+                                <div class="overlay-content-box">
+                                    <div class="icon-holder">
+                                        <span class="icon-people"></span>
+                                    </div>
+                                    <h3>We are Professional</h3>
+                                    <span>Consultant</span>
+                                    <p>Expound the actual teachings truth the great explorer.</p>
+                                    <div class="border"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End single box-->
+                        <!--Start single box-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="single-box text-center">
+                                <div class="icon-holder">
+                                    <span class="icon-business"></span>
+                                </div>
+                                <h3>Licensed & Certified</h3>
+                                <span>Company</span>
+                                <div class="overlay-content-box">
+                                    <div class="icon-holder">
+                                        <span class="icon-business"></span>
+                                    </div>
+                                    <h3>Licensed & Certified</h3>
+                                    <span>Company</span>
+                                    <p>Expound the actual teachings truth the great explorer.</p>
+                                    <div class="border"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End single box-->
+                        <!--Start single box-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="single-box text-center">
+                                <div class="icon-holder">
+                                    <span class="icon-landscape"></span>
+                                </div>
+                                <h3>Number 1 Company</h3>
+                                <span>In Region</span>
+                                <div class="overlay-content-box">
+                                    <div class="icon-holder">
+                                        <span class="icon-landscape"></span>
+                                    </div>
+                                    <h3>Number 1 Company</h3>
+                                    <span>In Region</span>
+                                    <p>Expound the actual teachings truth the great explorer.</p>
+                                    <div class="border"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End single box-->
+                        <!--Start single box-->
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="single-box text-center">
+                                <div class="icon-holder">
+                                    <span class="icon-people-1"></span>
+                                </div>
+                                <h3>Leading Provider of</h3>
+                                <span>Busi. Solutions</span>
+                                <div class="overlay-content-box">
+                                    <div class="icon-holder">
+                                        <span class="icon-people-1"></span>
+                                    </div>
+                                    <h3>Leading Provider of</h3>
+                                    <span>Busi. Solutions</span>
+                                    <p>Expound the actual teachings truth the great explorer.</p>
+                                    <div class="border"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End single box-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End choose area-->
+<!--Start services area-->
+<section class="services-area">
+    <div class="container">
+        <div class="sec-title text-center">
+            <p>Actually What We Do</p>
+            <h1>Our Main Services</h1>
+            <div class="border center"></div>
+            <span>We are experts in this industry with over 100 years experience. What that means is you are going to get<br> right solution. please find our services.</span>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="service-carousel">
+                    <!--Start single service item-->
+                    <div class="single-service-item">
+                        <div class="img-holder">
+                            <img src="~/Media/1043/1.jpg" alt="Awesome Image">
+                            <div class="icon-box">
+                                <span class="icon-suitcase"></span>
+                            </div>
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="title"><a href="service-single.html">Turnaround Consulting</a></h3>
+                            <p>There anyone who loves or pursues desires to obtain pain of itself, because it is pain occasionally circumstances occur.</p>
+                            <a class="readmore" href="service-single.html">Read More</a>
+                        </div>
+                    </div>
+                    <!--Start single service item-->
+                    <!--Start single service item-->
+                    <div class="single-service-item">
+                        <div class="img-holder">
+                            <img src="~/Media/1044/2.jpg" alt="Awesome Image">
+                            <div class="icon-box">
+                                <span class="icon-money"></span>
+                            </div>
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="title"><a href="service-single.html">Trades and Stocks</a></h3>
+                            <p>How this mistaken  denouncing pleasure and praising pain was born & we will give complete account of system.</p>
+                            <a class="readmore" href="service-single.html">Read More</a>
+                        </div>
+                    </div>
+                    <!--Start single service item-->
+                    <!--Start single service item-->
+                    <div class="single-service-item">
+                        <div class="img-holder">
+                            <img src="~/Media/1045/3.jpg" alt="Awesome Image">
+                            <div class="icon-box">
+                                <span class="icon-sheet"></span>
+                            </div>
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="title"><a href="service-single.html">Bonds & Commodities</a></h3>
+                            <p>Except to obtain some advantage from but who has any rights to find fault with a man who chooses to enjoy a pleasure.</p>
+                            <a class="readmore" href="service-single.html">Read More</a>
+                        </div>
+                    </div>
+                    <!--Start single service item-->
+                    <!--Start single service item-->
+                    <div class="single-service-item">
+                        <div class="img-holder">
+                            <img src="~/Media/1043/1.jpg" alt="Awesome Image">
+                            <div class="icon-box">
+                                <span class="icon-suitcase"></span>
+                            </div>
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="title"><a href="service-single.html">Turnaround Consulting</a></h3>
+                            <p>There anyone who loves or pursues desires to obtain pain of itself, because it is pain occasionally circumstances occur.</p>
+                            <a class="readmore" href="service-single.html">Read More</a>
+                        </div>
+                    </div>
+                    <!--Start single service item-->
+                    <!--Start single service item-->
+                    <div class="single-service-item">
+                        <div class="img-holder">
+                            <img src="~/Media/1044/2.jpg" alt="Awesome Image">
+                            <div class="icon-box">
+                                <span class="icon-money"></span>
+                            </div>
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="title"><a href="service-single.html">Trades and Stocks</a></h3>
+                            <p>How this mistaken  denouncing pleasure and praising pain was born & we will give complete account of system.</p>
+                            <a class="readmore" href="service-single.html">Read More</a>
+                        </div>
+                    </div>
+                    <!--Start single service item-->
+                    <!--Start single service item-->
+                    <div class="single-service-item">
+                        <div class="img-holder">
+                            <img src="~/Media/1045/3.jpg" alt="Awesome Image">
+                            <div class="icon-box">
+                                <span class="icon-sheet"></span>
+                            </div>
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="title"><a href="service-single.html">Bonds & Commodities</a></h3>
+                            <p>Except to obtain some advantage from but who has any rights to find fault with a man who chooses to enjoy a pleasure.</p>
+                            <a class="readmore" href="service-single.html">Read More</a>
+                        </div>
+                    </div>
+                    <!--Start single service item-->
+                    <!--Start single service item-->
+                    <div class="single-service-item">
+                        <div class="img-holder">
+                            <img src="~/Media/1043/1.jpg" alt="Awesome Image">
+                            <div class="icon-box">
+                                <span class="icon-suitcase"></span>
+                            </div>
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="title"><a href="service-single.html">Turnaround Consulting</a></h3>
+                            <p>There anyone who loves or pursues desires to obtain pain of itself, because it is pain occasionally circumstances occur.</p>
+                            <a class="readmore" href="service-single.html">Read More</a>
+                        </div>
+                    </div>
+                    <!--Start single service item-->
+                    <!--Start single service item-->
+                    <div class="single-service-item">
+                        <div class="img-holder">
+                            <img src="~/Media/1044/2.jpg" alt="Awesome Image">
+                            <div class="icon-box">
+                                <span class="icon-money"></span>
+                            </div>
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="title"><a href="service-single.html">Trades and Stocks</a></h3>
+                            <p>How this mistaken  denouncing pleasure and praising pain was born & we will give complete account of system.</p>
+                            <a class="readmore" href="service-single.html">Read More</a>
+                        </div>
+                    </div>
+                    <!--Start single service item-->
+                    <!--Start single service item-->
+                    <div class="single-service-item">
+                        <div class="img-holder">
+                            <img src="~/Media/1045/3.jpg" alt="Awesome Image">
+                            <div class="icon-box">
+                                <span class="icon-sheet"></span>
+                            </div>
+                            <div class="overlay-style-one">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3 class="title"><a href="service-single.html">Bonds & Commodities</a></h3>
+                            <p>Except to obtain some advantage from but who has any rights to find fault with a man who chooses to enjoy a pleasure.</p>
+                            <a class="readmore" href="service-single.html">Read More</a>
+                        </div>
+                    </div>
+                    <!--Start single service item-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Start service about bg-->
+    <div class="service-about-bg parallax-bg-one" style="background-image:url(Media/1133/service-about-bg.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="inner-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End service about bg-->
+
+</section>
+<!--End services area-->
+<!--Start about area-->
+<section class="about-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="about-text-box">
+                    <div class="sec-title">
+                        <p>Who We Are</p>
+                        <h1>About Our Company</h1>
+                        <div class="border left"></div>
+                    </div>
+                    <div class="inner-content">
+                        <h3>Since 2000, we provide best service for our valuable clients.</h3>
+                        <div class="text">
+                            <p>We have built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle, transportation seds works sectors. multi disciplinary team of engineering & experts, who loves who pursues desires to obtains pains  itself explain.</p>
+                        </div>
+                        <div class="bottom">
+                            <div class="read-more-button">
+                                <a href="#">read More</a>
+                            </div>
+                            <div class="our-logo">
+                                <img src="~/Media/1042/our-logo.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="company-featured-box clearfix">
+                    <ul>
+                        <li class="bg-one">
+                            <div class="single-box">
+                                <div class="icon-holder">
+                                    <span class="icon-pen"></span>
+                                </div>
+                                <div class="title-holder">
+                                    <h3>Completed more than<br> 2000 projects.</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-box">
+                                <div class="icon-holder">
+                                    <span class="icon-people-2"></span>
+                                </div>
+                                <div class="title-holder">
+                                    <h3>400+ experts consultants<br> ready to help you.</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-box">
+                                <div class="icon-holder">
+                                    <span class="icon-smile"></span>
+                                </div>
+                                <div class="title-holder">
+                                    <h3>More than 1500 clients<br> satisfied with us.</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="blue-bg">
+                            <div class="single-box">
+                                <div class="icon-holder">
+                                    <span class="icon-medal"></span>
+                                </div>
+                                <div class="title-holder">
+                                    <h3>We won 172 awards for<br> best service.</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End about area-->
+<!--Start latest project area-->
+<section class="latest-project-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="sec-title float-left">
+                    <p>Our Works</p>
+                    <h1>Latest Projects</h1>
+                    <div class="border left"></div>
+                </div>
+                <div class="filters float-right">
+                    <ul class="post-filter clearfix">
+                        <li class="active" data-filter=".filter-item"><span>View All</span></li>
+                        <li data-filter=".consulting"><span>Consulting</span></li>
+                        <li data-filter=".finance"><span>Finance</span></li>
+                        <li data-filter=".marketing"><span>Marketing</span></li>
+                        <li data-filter=".growth"><span>Growth</span></li>
+                        <li data-filter=".technical"><span>Technical</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-content masonary-layout filter-layout clearfix">
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item consulting finance marketing">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1002/lat-project-1.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item consulting finance">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1004/lat-project-2.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item consulting technical">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1005/lat-project-3.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item technical marketing">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1006/lat-project-4.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item consulting technical finance">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1007/lat-project-5.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item consulting technical finance">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1008/lat-project-6.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item growth technical finance">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1009/lat-project-7.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item consulting technical finance">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1010/lat-project-8.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item consulting technical growth">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1011/lat-project-9.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+        <!--Start single project item-->
+        <div class="single-item span-width-5 filter-item growth technical finance">
+            <div class="single-project-item">
+                <div class="img-holder">
+                    <img src="~/Media/1003/lat-project-10.jpg" alt="Awesome Image">
+                    <div class="overlay-style-one">
+                        <div class="box">
+                            <div class="content">
+                                <div class="inner-content">
+                                    <span>Technical & Growth</span>
+                                    <h3><a href="project-single.html">Leading consumer products<br>company.</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End single project item-->
+
+    </div>
+</section>
+<!--End latest project area-->
+<!--Start testimonial section-->
+<section class="testimonial-section" style="background-image:url(Media/1135/testimonial-section-bg.jpg);">
+    <div class="container">
+        <div class="title text-center">
+            <h1>We trusted by more than 10,000 clients</h1>
+            <span>Here you know how our customers trusted our comapny & How our team provide a service.</span>
+        </div>
+        <div class="testimonial-outer">
+            <div class="quote-icon text-center">
+                <span class="icon-school"></span>
+            </div>
+            <!--Client Testimonial Carousel-->
+            <div class="client-testimonial-carousel">
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
+                    </div>
+                </div>
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
+                    </div>
+                </div>
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
+                    </div>
+                </div>
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
+                    </div>
+                </div>
+            </div>
+            <!--Product Thumbs Carousel-->
+            <div class="client-thumb-outer">
+                <div class="client-thumbs-carousel owl-carousel owl-theme">
+                    <div class="thumb-item">
+                        <figure class="thumb-box"><img src="~/Media/1078/1.png" alt=""></figure>
+                        <div class="thumb-content">
+                            <h3>Jenifer Hearly</h3>
+                            <div class="designation">Newyork</div>
+                        </div>
+                    </div>
+                    <div class="thumb-item">
+                        <figure class="thumb-box"><img src="~/Media/1079/2.png" alt=""></figure>
+                        <div class="thumb-content">
+                            <h3>Jenifer Hearly</h3>
+                            <div class="designation">Newyork</div>
+                        </div>
+                    </div>
+                    <div class="thumb-item">
+                        <figure class="thumb-box"><img src="~/Media/1080/3.png" alt=""></figure>
+                        <div class="thumb-content">
+                            <h3>Jenifer Hearly</h3>
+                            <div class="designation">Newyork</div>
+                        </div>
+                    </div>
+                    <div class="thumb-item">
+                        <figure class="thumb-box"><img src="~/Media/1081/4.png" alt=""></figure>
+                        <div class="thumb-content">
+                            <h3>Jenifer Hearly</h3>
+                            <div class="designation">Newyork</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End testimonial section-->
+<!--Start latest blog area-->
+<section class="latest-blog-area sec-pding-two">
+    <div class="container">
+        <div class="sec-title text-center">
+            <p>News & Press Release</p>
+            <h1>Latest From Blog</h1>
+            <div class="border center"></div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="blog-Carousel">
+                    <!--Start single blog item-->
+                    <div class="single-blog-post">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                <div class="img-holder">
+                                    <img src="~/Media/1095/lat-blog-1.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-one">
+                                        <div class="box">
+                                            <div class="content">
+                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                <div class="text-holder">
+                                    <div class="top clearfix">
+                                        <div class="meta-box">
+                                            <ul class="meta-info">
+                                                <li><a href="#">By Fletcher</a></li>
+                                                <li><a href="#">June 21, 2017</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <h3><a class="blog-title" href="blog-single.html">We won best company award of the year 2015 & 16.</a></h3>
+                                        <p>Rationally encounter consequences that are extremely painful for your...</p>
+                                        <div class="readmore">
+                                            <a href="blog-single.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single blog item-->
+                    <!--Start single blog item-->
+                    <div class="single-blog-post">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                <div class="img-holder">
+                                    <img src="~/Media/1096/lat-blog-2.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-one">
+                                        <div class="box">
+                                            <div class="content">
+                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                <div class="text-holder">
+                                    <div class="top clearfix">
+                                        <div class="meta-box">
+                                            <ul class="meta-info">
+                                                <li><a href="#">By Fletcher</a></li>
+                                                <li><a href="#">June 21, 2017</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <h3><a class="blog-title" href="blog-single.html">Eight Pricing strategies for your digital product.</a></h3>
+                                        <p>Pursues desires obtain pain itself it  pain, but because occasionally...</p>
+                                        <div class="readmore">
+                                            <a href="blog-single.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single blog item-->
+                    <!--Start single blog item-->
+                    <div class="single-blog-post">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                <div class="img-holder">
+                                    <img src="~/Media/1095/lat-blog-1.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-one">
+                                        <div class="box">
+                                            <div class="content">
+                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                <div class="text-holder">
+                                    <div class="top clearfix">
+                                        <div class="meta-box">
+                                            <ul class="meta-info">
+                                                <li><a href="#">By Fletcher</a></li>
+                                                <li><a href="#">June 21, 2017</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <h3><a class="blog-title" href="blog-single.html">We won best company award of the year 2015 & 16.</a></h3>
+                                        <p>Rationally encounter consequences that are extremely painful for your...</p>
+                                        <div class="readmore">
+                                            <a href="blog-single.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single blog item-->
+                    <!--Start single blog item-->
+                    <div class="single-blog-post">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                <div class="img-holder">
+                                    <img src="~/Media/1096/lat-blog-2.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-one">
+                                        <div class="box">
+                                            <div class="content">
+                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                <div class="text-holder">
+                                    <div class="top clearfix">
+                                        <div class="meta-box">
+                                            <ul class="meta-info">
+                                                <li><a href="#">By Fletcher</a></li>
+                                                <li><a href="#">June 21, 2017</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <h3><a class="blog-title" href="blog-single.html">Eight Pricing strategies for your digital product.</a></h3>
+                                        <p>Pursues desires obtain pain itself it  pain, but because occasionally...</p>
+                                        <div class="readmore">
+                                            <a href="blog-single.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single blog item-->
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End latest blog area-->
+<!--Start Appointment Area-->
+<section class="appointment-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
+                <div class="appointment-img-holder clearfix">
+                    <img src="~/Media/1032/appoinment-image.jpg" alt="">
+                    <div class="subscribe-form-box">
+                        <p>Sign up us today we will send you latest news, usefull tips at your mail address.</p>
+                        <form class="newsletter-form" action="#">
+                            <input placeholder="Enter Email..." type="text">
+                            <button type="submit">Submit</button>
+                        </form>
+                        <span>* Your email id is very confidential</span>
+                        <ul class="sociallinks-style-two">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12">
+                <div class="text-holder">
+                    <div class="sec-title text-center">
+                        <p>For an Enquiry</p>
+                        <h1>Make an Appointment</h1>
+                        <div class="border center"></div>
+                    </div>
+                    <form class="appointment-form-box">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="form_name" value="" placeholder="Your Name*" required="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="form_email" value="" placeholder="Email address*" required="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="form_phone" value="" placeholder="Phone*">
+                            </div>
+                            <div class="col-md-6">
+                                <select class="selectmenu">
+                                    <option selected="selected">Select Service</option>
+                                    <option>Business Growth</option>
+                                    <option>Sustainability</option>
+                                    <option>Performance</option>
+                                    <option>Advanced Analytics</option>
+                                    <option>Organization</option>
+                                    <option>Customer Insights</option>
+                                    <option>Marketing Plan</option>
+                                    <option>Online Consulting</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn-one" type="submit">Submit Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End Appointment Area-->
+<!--Start Brand area-->
+<section class="brand-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-7 col-md-12">
+                <div class="brand-text-box">
+                    <div class="title">
+                        <h3>We working with right<br> partners.</h3>
+                    </div>
+                    <div class="text">
+                        <p>Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born  complete account of the system.</p>
+                        <a href="#">Join With Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-12 col-md-12">
+                <ul class="brand">
+                    <!--Start single item-->
+                    <li class="single-item">
+                        <a href="#"><img src="~/Media/1111/1.png" alt="Awesome Brand Image"></a>
+                        <div class="text">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <a class="visit-site" href="#">Visit Website</a>
+                        </div>
+                    </li>
+                    <!--End single item-->
+                    <!--Start single item-->
+                    <li class="single-item">
+                        <a href="#"><img src="~/Media/1112/2.png" alt="Awesome Brand Image"></a>
+                        <div class="text">
+                            <p>The master-builder of human happiness one avoids pleasure itself, because it is pleasure, but because those who do not know pursue.</p>
+                            <a class="visit-site" href="#">Visit Website</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Brand area-->
+<!--Start slogan area-->
+<section class="slogan-area" style="background-image:url(Media/1134/slogan-bg.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="inner-content">
+                    <div class="title float-left">
+                        <h3>If the plan doesn’t work, change the plan, but never the goal.</h3>
+                    </div>
+                    <div class="button float-right">
+                        <a href="#">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End slogan area-->
