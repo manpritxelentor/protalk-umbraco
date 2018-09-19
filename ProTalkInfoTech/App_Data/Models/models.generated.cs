@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "49289f14087b1106")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "bbf7dc347dea09f7")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.8")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -50,12 +50,57 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// AboutUsHeader
+		///</summary>
+		[ImplementPropertyType("aboutUsHeader")]
+		public string AboutUsHeader
+		{
+			get { return this.GetPropertyValue<string>("aboutUsHeader"); }
+		}
+
+		///<summary>
+		/// AboutUsText
+		///</summary>
+		[ImplementPropertyType("aboutUsText")]
+		public string AboutUsText
+		{
+			get { return this.GetPropertyValue<string>("aboutUsText"); }
+		}
+
+		///<summary>
+		/// AboutUsTitle
+		///</summary>
+		[ImplementPropertyType("aboutUsTitle")]
+		public string AboutUsTitle
+		{
+			get { return this.GetPropertyValue<string>("aboutUsTitle"); }
+		}
+
+		///<summary>
+		/// FeaturedServices
+		///</summary>
+		[ImplementPropertyType("featuredServices")]
+		public IEnumerable<IPublishedContent> FeaturedServices
+		{
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("featuredServices"); }
+		}
+
+		///<summary>
 		/// FeaturedSlides
 		///</summary>
 		[ImplementPropertyType("featuredSlides")]
 		public IEnumerable<IPublishedContent> FeaturedSlides
 		{
 			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("featuredSlides"); }
+		}
+
+		///<summary>
+		/// FeaturedTestimonial
+		///</summary>
+		[ImplementPropertyType("featuredTestimonial")]
+		public IEnumerable<IPublishedContent> FeaturedTestimonial
+		{
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("featuredTestimonial"); }
 		}
 	}
 
@@ -118,6 +163,121 @@ namespace Umbraco.Web.PublishedContentModels
 		public string SlideTitle
 		{
 			get { return this.GetPropertyValue<string>("slideTitle"); }
+		}
+	}
+
+	/// <summary>Testimonial</summary>
+	[PublishedContentModel("testimonial")]
+	public partial class Testimonial : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "testimonial";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Testimonial(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Testimonial, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// CustomerCity
+		///</summary>
+		[ImplementPropertyType("customerCity")]
+		public string CustomerCity
+		{
+			get { return this.GetPropertyValue<string>("customerCity"); }
+		}
+
+		///<summary>
+		/// CustomerImage
+		///</summary>
+		[ImplementPropertyType("customerImage")]
+		public IPublishedContent CustomerImage
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("customerImage"); }
+		}
+
+		///<summary>
+		/// CustomerName
+		///</summary>
+		[ImplementPropertyType("customerName")]
+		public string CustomerName
+		{
+			get { return this.GetPropertyValue<string>("customerName"); }
+		}
+
+		///<summary>
+		/// TestimonialText
+		///</summary>
+		[ImplementPropertyType("testimonialText")]
+		public string TestimonialText
+		{
+			get { return this.GetPropertyValue<string>("testimonialText"); }
+		}
+	}
+
+	/// <summary>HomeService</summary>
+	[PublishedContentModel("homeService")]
+	public partial class HomeService : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "homeService";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public HomeService(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HomeService, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// ServiceImage
+		///</summary>
+		[ImplementPropertyType("serviceImage")]
+		public IPublishedContent ServiceImage
+		{
+			get { return this.GetPropertyValue<IPublishedContent>("serviceImage"); }
+		}
+
+		///<summary>
+		/// ServiceText
+		///</summary>
+		[ImplementPropertyType("serviceText")]
+		public string ServiceText
+		{
+			get { return this.GetPropertyValue<string>("serviceText"); }
+		}
+
+		///<summary>
+		/// ServiceTitle
+		///</summary>
+		[ImplementPropertyType("serviceTitle")]
+		public string ServiceTitle
+		{
+			get { return this.GetPropertyValue<string>("serviceTitle"); }
 		}
 	}
 

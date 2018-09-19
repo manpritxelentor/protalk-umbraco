@@ -599,6 +599,7 @@
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\gmaps.js" />
     <Content Include="Scripts\graph.js" />
+    <Content Include="Scripts\html5lightbox\Icons\css\fontello.css" />
     <Content Include="Scripts\html5lightbox\html5lightbox.js" />
     <Content Include="Scripts\isotope.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

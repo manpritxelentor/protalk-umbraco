@@ -212,202 +212,208 @@
             <div class="col-xl-12">
                 <div class="service-carousel">
                     <!--Start single service item-->
-                    <div class="single-service-item">
-                        <div class="img-holder">
-                            <img src="~/Media/1043/1.jpg" alt="Awesome Image">
-                            <div class="icon-box">
-                                <span class="icon-suitcase"></span>
-                            </div>
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    @if (Model.Content.FeaturedServices.Count() > 0)
+                    {
+                        foreach (HomeService service in Model.Content.FeaturedServices)
+                        {
+                            <div class="single-service-item">
+                                <div class="img-holder">
+                                    <img src="@service.ServiceImage.Url" alt="Awesome Image">
+                                    <div class="icon-box">
+                                        <span class="icon-suitcase"></span>
+                                    </div>
+                                    <div class="overlay-style-one">
+                                        <div class="box">
+                                            <div class="content">
+                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3 class="title"><a href="service-single.html">Turnaround Consulting</a></h3>
-                            <p>There anyone who loves or pursues desires to obtain pain of itself, because it is pain occasionally circumstances occur.</p>
-                            <a class="readmore" href="service-single.html">Read More</a>
-                        </div>
-                    </div>
-                    <!--Start single service item-->
-                    <!--Start single service item-->
-                    <div class="single-service-item">
-                        <div class="img-holder">
-                            <img src="~/Media/1044/2.jpg" alt="Awesome Image">
-                            <div class="icon-box">
-                                <span class="icon-money"></span>
-                            </div>
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
+                                <div class="text-holder">
+                                    <h3 class="title"><a href="service-single.html">@service.ServiceTitle</a></h3>
+                                    <p>@service.ServiceText</p>
+                                    <a class="readmore" href="service-single.html">Read More</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3 class="title"><a href="service-single.html">Trades and Stocks</a></h3>
-                            <p>How this mistaken  denouncing pleasure and praising pain was born & we will give complete account of system.</p>
-                            <a class="readmore" href="service-single.html">Read More</a>
-                        </div>
-                    </div>
+                        }
+                    }
                     <!--Start single service item-->
                     <!--Start single service item-->
-                    <div class="single-service-item">
-                        <div class="img-holder">
-                            <img src="~/Media/1045/3.jpg" alt="Awesome Image">
-                            <div class="icon-box">
-                                <span class="icon-sheet"></span>
-                            </div>
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3 class="title"><a href="service-single.html">Bonds & Commodities</a></h3>
-                            <p>Except to obtain some advantage from but who has any rights to find fault with a man who chooses to enjoy a pleasure.</p>
-                            <a class="readmore" href="service-single.html">Read More</a>
-                        </div>
-                    </div>
+                    <!--<div class="single-service-item">-->
+                    <!--    <div class="img-holder">-->
+                    <!--        <img src="~/Media/1044/2.jpg" alt="Awesome Image">-->
+                    <!--        <div class="icon-box">-->
+                    <!--            <span class="icon-money"></span>-->
+                    <!--        </div>-->
+                    <!--        <div class="overlay-style-one">-->
+                    <!--            <div class="box">-->
+                    <!--                <div class="content">-->
+                    <!--                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    <div class="text-holder">-->
+                    <!--        <h3 class="title"><a href="service-single.html">Trades and Stocks</a></h3>-->
+                    <!--        <p>How this mistaken  denouncing pleasure and praising pain was born & we will give complete account of system.</p>-->
+                    <!--        <a class="readmore" href="service-single.html">Read More</a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <!--Start single service item-->
                     <!--Start single service item-->
-                    <div class="single-service-item">
-                        <div class="img-holder">
-                            <img src="~/Media/1043/1.jpg" alt="Awesome Image">
-                            <div class="icon-box">
-                                <span class="icon-suitcase"></span>
-                            </div>
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3 class="title"><a href="service-single.html">Turnaround Consulting</a></h3>
-                            <p>There anyone who loves or pursues desires to obtain pain of itself, because it is pain occasionally circumstances occur.</p>
-                            <a class="readmore" href="service-single.html">Read More</a>
-                        </div>
-                    </div>
+                    <!--<div class="single-service-item">-->
+                    <!--    <div class="img-holder">-->
+                    <!--        <img src="~/Media/1045/3.jpg" alt="Awesome Image">-->
+                    <!--        <div class="icon-box">-->
+                    <!--            <span class="icon-sheet"></span>-->
+                    <!--        </div>-->
+                    <!--        <div class="overlay-style-one">-->
+                    <!--            <div class="box">-->
+                    <!--                <div class="content">-->
+                    <!--                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    <div class="text-holder">-->
+                    <!--        <h3 class="title"><a href="service-single.html">Bonds & Commodities</a></h3>-->
+                    <!--        <p>Except to obtain some advantage from but who has any rights to find fault with a man who chooses to enjoy a pleasure.</p>-->
+                    <!--        <a class="readmore" href="service-single.html">Read More</a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <!--Start single service item-->
                     <!--Start single service item-->
-                    <div class="single-service-item">
-                        <div class="img-holder">
-                            <img src="~/Media/1044/2.jpg" alt="Awesome Image">
-                            <div class="icon-box">
-                                <span class="icon-money"></span>
-                            </div>
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3 class="title"><a href="service-single.html">Trades and Stocks</a></h3>
-                            <p>How this mistaken  denouncing pleasure and praising pain was born & we will give complete account of system.</p>
-                            <a class="readmore" href="service-single.html">Read More</a>
-                        </div>
-                    </div>
+                    <!--<div class="single-service-item">-->
+                    <!--    <div class="img-holder">-->
+                    <!--        <img src="~/Media/1043/1.jpg" alt="Awesome Image">-->
+                    <!--        <div class="icon-box">-->
+                    <!--            <span class="icon-suitcase"></span>-->
+                    <!--        </div>-->
+                    <!--        <div class="overlay-style-one">-->
+                    <!--            <div class="box">-->
+                    <!--                <div class="content">-->
+                    <!--                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    <div class="text-holder">-->
+                    <!--        <h3 class="title"><a href="service-single.html">Turnaround Consulting</a></h3>-->
+                    <!--        <p>There anyone who loves or pursues desires to obtain pain of itself, because it is pain occasionally circumstances occur.</p>-->
+                    <!--        <a class="readmore" href="service-single.html">Read More</a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <!--Start single service item-->
                     <!--Start single service item-->
-                    <div class="single-service-item">
-                        <div class="img-holder">
-                            <img src="~/Media/1045/3.jpg" alt="Awesome Image">
-                            <div class="icon-box">
-                                <span class="icon-sheet"></span>
-                            </div>
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3 class="title"><a href="service-single.html">Bonds & Commodities</a></h3>
-                            <p>Except to obtain some advantage from but who has any rights to find fault with a man who chooses to enjoy a pleasure.</p>
-                            <a class="readmore" href="service-single.html">Read More</a>
-                        </div>
-                    </div>
+                    <!--<div class="single-service-item">-->
+                    <!--    <div class="img-holder">-->
+                    <!--        <img src="~/Media/1044/2.jpg" alt="Awesome Image">-->
+                    <!--        <div class="icon-box">-->
+                    <!--            <span class="icon-money"></span>-->
+                    <!--        </div>-->
+                    <!--        <div class="overlay-style-one">-->
+                    <!--            <div class="box">-->
+                    <!--                <div class="content">-->
+                    <!--                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    <div class="text-holder">-->
+                    <!--        <h3 class="title"><a href="service-single.html">Trades and Stocks</a></h3>-->
+                    <!--        <p>How this mistaken  denouncing pleasure and praising pain was born & we will give complete account of system.</p>-->
+                    <!--        <a class="readmore" href="service-single.html">Read More</a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <!--Start single service item-->
                     <!--Start single service item-->
-                    <div class="single-service-item">
-                        <div class="img-holder">
-                            <img src="~/Media/1043/1.jpg" alt="Awesome Image">
-                            <div class="icon-box">
-                                <span class="icon-suitcase"></span>
-                            </div>
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3 class="title"><a href="service-single.html">Turnaround Consulting</a></h3>
-                            <p>There anyone who loves or pursues desires to obtain pain of itself, because it is pain occasionally circumstances occur.</p>
-                            <a class="readmore" href="service-single.html">Read More</a>
-                        </div>
-                    </div>
+                    <!--<div class="single-service-item">-->
+                    <!--    <div class="img-holder">-->
+                    <!--        <img src="~/Media/1045/3.jpg" alt="Awesome Image">-->
+                    <!--        <div class="icon-box">-->
+                    <!--            <span class="icon-sheet"></span>-->
+                    <!--        </div>-->
+                    <!--        <div class="overlay-style-one">-->
+                    <!--            <div class="box">-->
+                    <!--                <div class="content">-->
+                    <!--                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    <div class="text-holder">-->
+                    <!--        <h3 class="title"><a href="service-single.html">Bonds & Commodities</a></h3>-->
+                    <!--        <p>Except to obtain some advantage from but who has any rights to find fault with a man who chooses to enjoy a pleasure.</p>-->
+                    <!--        <a class="readmore" href="service-single.html">Read More</a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <!--Start single service item-->
                     <!--Start single service item-->
-                    <div class="single-service-item">
-                        <div class="img-holder">
-                            <img src="~/Media/1044/2.jpg" alt="Awesome Image">
-                            <div class="icon-box">
-                                <span class="icon-money"></span>
-                            </div>
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3 class="title"><a href="service-single.html">Trades and Stocks</a></h3>
-                            <p>How this mistaken  denouncing pleasure and praising pain was born & we will give complete account of system.</p>
-                            <a class="readmore" href="service-single.html">Read More</a>
-                        </div>
-                    </div>
+                    <!--<div class="single-service-item">-->
+                    <!--    <div class="img-holder">-->
+                    <!--        <img src="~/Media/1043/1.jpg" alt="Awesome Image">-->
+                    <!--        <div class="icon-box">-->
+                    <!--            <span class="icon-suitcase"></span>-->
+                    <!--        </div>-->
+                    <!--        <div class="overlay-style-one">-->
+                    <!--            <div class="box">-->
+                    <!--                <div class="content">-->
+                    <!--                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    <div class="text-holder">-->
+                    <!--        <h3 class="title"><a href="service-single.html">Turnaround Consulting</a></h3>-->
+                    <!--        <p>There anyone who loves or pursues desires to obtain pain of itself, because it is pain occasionally circumstances occur.</p>-->
+                    <!--        <a class="readmore" href="service-single.html">Read More</a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <!--Start single service item-->
                     <!--Start single service item-->
-                    <div class="single-service-item">
-                        <div class="img-holder">
-                            <img src="~/Media/1045/3.jpg" alt="Awesome Image">
-                            <div class="icon-box">
-                                <span class="icon-sheet"></span>
-                            </div>
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3 class="title"><a href="service-single.html">Bonds & Commodities</a></h3>
-                            <p>Except to obtain some advantage from but who has any rights to find fault with a man who chooses to enjoy a pleasure.</p>
-                            <a class="readmore" href="service-single.html">Read More</a>
-                        </div>
-                    </div>
+                    <!--<div class="single-service-item">-->
+                    <!--    <div class="img-holder">-->
+                    <!--        <img src="~/Media/1044/2.jpg" alt="Awesome Image">-->
+                    <!--        <div class="icon-box">-->
+                    <!--            <span class="icon-money"></span>-->
+                    <!--        </div>-->
+                    <!--        <div class="overlay-style-one">-->
+                    <!--            <div class="box">-->
+                    <!--                <div class="content">-->
+                    <!--                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    <div class="text-holder">-->
+                    <!--        <h3 class="title"><a href="service-single.html">Trades and Stocks</a></h3>-->
+                    <!--        <p>How this mistaken  denouncing pleasure and praising pain was born & we will give complete account of system.</p>-->
+                    <!--        <a class="readmore" href="service-single.html">Read More</a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--Start single service item-->
+                    <!--Start single service item-->
+                    <!--<div class="single-service-item">-->
+                    <!--    <div class="img-holder">-->
+                    <!--        <img src="~/Media/1045/3.jpg" alt="Awesome Image">-->
+                    <!--        <div class="icon-box">-->
+                    <!--            <span class="icon-sheet"></span>-->
+                    <!--        </div>-->
+                    <!--        <div class="overlay-style-one">-->
+                    <!--            <div class="box">-->
+                    <!--                <div class="content">-->
+                    <!--                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>-->
+                    <!--                </div>-->
+                    <!--            </div>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    <div class="text-holder">-->
+                    <!--        <h3 class="title"><a href="service-single.html">Bonds & Commodities</a></h3>-->
+                    <!--        <p>Except to obtain some advantage from but who has any rights to find fault with a man who chooses to enjoy a pleasure.</p>-->
+                    <!--        <a class="readmore" href="service-single.html">Read More</a>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <!--Start single service item-->
 
                 </div>
@@ -439,13 +445,13 @@
                 <div class="about-text-box">
                     <div class="sec-title">
                         <p>Who We Are</p>
-                        <h1>About Our Company</h1>
+                        <h1>@Model.Content.AboutUsHeader</h1>
                         <div class="border left"></div>
                     </div>
                     <div class="inner-content">
-                        <h3>Since 2000, we provide best service for our valuable clients.</h3>
+                        <h3>@Model.Content.AboutUsTitle</h3>
                         <div class="text">
-                            <p>We have built enviable reputation in consumer goods, heavy industry, high tech, manufacturing, medical, vehicle, transportation seds works sectors. multi disciplinary team of engineering & experts, who loves who pursues desires to obtains pains  itself explain.</p>
+                            <p>@Model.Content.AboutUsText</p>
                         </div>
                         <div class="bottom">
                             <div class="read-more-button">
@@ -741,58 +747,70 @@
             </div>
             <!--Client Testimonial Carousel-->
             <div class="client-testimonial-carousel">
-                <div class="testimonial-block-one">
-                    <div class="inner-box">
-                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
-                    </div>
-                </div>
-                <div class="testimonial-block-one">
-                    <div class="inner-box">
-                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
-                    </div>
-                </div>
-                <div class="testimonial-block-one">
-                    <div class="inner-box">
-                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
-                    </div>
-                </div>
-                <div class="testimonial-block-one">
-                    <div class="inner-box">
-                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
-                    </div>
-                </div>
+                @if (Model.Content.FeaturedTestimonial.Count() > 0)
+                {
+                    foreach (Testimonial testimonial in Model.Content.FeaturedTestimonial)
+                    {
+                        <div class="testimonial-block-one">
+                            <div class="inner-box">
+                                <div class="text">@testimonial.TestimonialText</div>
+                            </div>
+                        </div>
+                    }
+                }
+                <!--<div class="testimonial-block-one">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="testimonial-block-one">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                <!--<div class="testimonial-block-one">-->
+                <!--    <div class="inner-box">-->
+                <!--        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>-->
+                <!--    </div>-->
+                <!--</div>-->
             </div>
             <!--Product Thumbs Carousel-->
             <div class="client-thumb-outer">
                 <div class="client-thumbs-carousel owl-carousel owl-theme">
-                    <div class="thumb-item">
-                        <figure class="thumb-box"><img src="~/Media/1078/1.png" alt=""></figure>
-                        <div class="thumb-content">
-                            <h3>Jenifer Hearly</h3>
-                            <div class="designation">Newyork</div>
-                        </div>
-                    </div>
-                    <div class="thumb-item">
-                        <figure class="thumb-box"><img src="~/Media/1079/2.png" alt=""></figure>
-                        <div class="thumb-content">
-                            <h3>Jenifer Hearly</h3>
-                            <div class="designation">Newyork</div>
-                        </div>
-                    </div>
-                    <div class="thumb-item">
-                        <figure class="thumb-box"><img src="~/Media/1080/3.png" alt=""></figure>
-                        <div class="thumb-content">
-                            <h3>Jenifer Hearly</h3>
-                            <div class="designation">Newyork</div>
-                        </div>
-                    </div>
-                    <div class="thumb-item">
-                        <figure class="thumb-box"><img src="~/Media/1081/4.png" alt=""></figure>
-                        <div class="thumb-content">
-                            <h3>Jenifer Hearly</h3>
-                            <div class="designation">Newyork</div>
-                        </div>
-                    </div>
+                    @if (Model.Content.FeaturedTestimonial.Count() > 0)
+                    {
+                        foreach (Testimonial customerInfo in Model.Content.FeaturedTestimonial)
+                        {
+                            <div class="thumb-item">
+                                <figure class="thumb-box"><img src="@customerInfo.CustomerImage.Url" alt=""></figure>
+                                <div class="thumb-content">
+                                    <h3>@customerInfo.CustomerName</h3>
+                                    <div class="designation">@customerInfo.CustomerCity</div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    <!--<div class="thumb-item">-->
+                    <!--    <figure class="thumb-box"><img src="~/Media/1079/2.png" alt=""></figure>-->
+                    <!--    <div class="thumb-content">-->
+                    <!--        <h3>Jenifer Hearly</h3>-->
+                    <!--        <div class="designation">Newyork</div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="thumb-item">-->
+                    <!--    <figure class="thumb-box"><img src="~/Media/1080/3.png" alt=""></figure>-->
+                    <!--    <div class="thumb-content">-->
+                    <!--        <h3>Jenifer Hearly</h3>-->
+                    <!--        <div class="designation">Newyork</div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="thumb-item">-->
+                    <!--    <figure class="thumb-box"><img src="~/Media/1081/4.png" alt=""></figure>-->
+                    <!--    <div class="thumb-content">-->
+                    <!--        <h3>Jenifer Hearly</h3>-->
+                    <!--        <div class="designation">Newyork</div>-->
+                    <!--    </div>-->
+                    <!--</div>-->
 
                 </div>
             </div>
