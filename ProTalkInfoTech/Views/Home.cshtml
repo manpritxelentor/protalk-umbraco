@@ -747,7 +747,7 @@
             </div>
             <!--Client Testimonial Carousel-->
             <div class="client-testimonial-carousel">
-                @if (Model.Content.FeaturedTestimonial.Count() > 0)
+                @*@if (Model.Content.FeaturedTestimonial.Count() > 0)
                 {
                     foreach (Testimonial testimonial in Model.Content.FeaturedTestimonial)
                     {
@@ -757,344 +757,341 @@
                             </div>
                         </div>
                     }
-                }
-                <!--<div class="testimonial-block-one">-->
-                <!--    <div class="inner-box">-->
-                <!--        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>-->
-                <!--    </div>-->
-                <!--</div>-->
-                <!--<div class="testimonial-block-one">-->
-                <!--    <div class="inner-box">-->
-                <!--        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>-->
-                <!--    </div>-->
-                <!--</div>-->
-                <!--<div class="testimonial-block-one">-->
-                <!--    <div class="inner-box">-->
-                <!--        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>-->
-                <!--    </div>-->
-                <!--</div>-->
-            </div>
+                }*@
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
+                    </div>
+                </div>
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
+                    </div>
+                </div>
+                <div class="testimonial-block-one">
+                    <div class="inner-box">
+                        <div class="text">“ These guys are just the coolest company ever! They were aware of our transported for road and tail and complex.performance on our project was extremely successful the great explorer of the truth, the master-builder  happiness avoids pleasure itself ”.</div>
+                    </div>
+                </div>            </div>
             <!--Product Thumbs Carousel-->
             <div class="client-thumb-outer">
-                <div class="client-thumbs-carousel owl-carousel owl-theme">
-                    @if (Model.Content.FeaturedTestimonial.Count() > 0)
-                    {
-                        foreach (Testimonial customerInfo in Model.Content.FeaturedTestimonial)
+                    <div class="client-thumbs-carousel owl-carousel owl-theme">
+                        @*@if (Model.Content.FeaturedTestimonial.Count() > 0)
                         {
-                            <div class="thumb-item">
-                                <figure class="thumb-box"><img src="@customerInfo.CustomerImage.Url" alt=""></figure>
-                                <div class="thumb-content">
-                                    <h3>@customerInfo.CustomerName</h3>
-                                    <div class="designation">@customerInfo.CustomerCity</div>
+                            foreach (Testimonial customerInfo in Model.Content.FeaturedTestimonial)
+                            {
+                                <div class="thumb-item">
+                                    <figure class="thumb-box"><img src="@customerInfo.CustomerImage.Url" alt=""></figure>
+                                    <div class="thumb-content">
+                                        <h3>@customerInfo.CustomerName</h3>
+                                        <div class="designation">@customerInfo.CustomerCity</div>
+                                    </div>
                                 </div>
+                            }
+                        }*@
+                        <div class="thumb-item">
+                            <figure class="thumb-box"><img src="~/Media/1079/2.png" alt=""></figure>
+                            <div class="thumb-content">
+                                <h3>Jenifer Hearly</h3>
+                                <div class="designation">Newyork</div>
                             </div>
-                        }
-                    }
-                    <!--<div class="thumb-item">-->
-                    <!--    <figure class="thumb-box"><img src="~/Media/1079/2.png" alt=""></figure>-->
-                    <!--    <div class="thumb-content">-->
-                    <!--        <h3>Jenifer Hearly</h3>-->
-                    <!--        <div class="designation">Newyork</div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <!--<div class="thumb-item">-->
-                    <!--    <figure class="thumb-box"><img src="~/Media/1080/3.png" alt=""></figure>-->
-                    <!--    <div class="thumb-content">-->
-                    <!--        <h3>Jenifer Hearly</h3>-->
-                    <!--        <div class="designation">Newyork</div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-                    <!--<div class="thumb-item">-->
-                    <!--    <figure class="thumb-box"><img src="~/Media/1081/4.png" alt=""></figure>-->
-                    <!--    <div class="thumb-content">-->
-                    <!--        <h3>Jenifer Hearly</h3>-->
-                    <!--        <div class="designation">Newyork</div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
-
+                        </div>
+                        <div class="thumb-item">
+                            <figure class="thumb-box"><img src="~/Media/1080/3.png" alt=""></figure>
+                            <div class="thumb-content">
+                                <h3>Jenifer Hearly</h3>
+                                <div class="designation">Newyork</div>
+                            </div>
+                        </div>
+                        <div class="thumb-item">
+                            <figure class="thumb-box"><img src="~/Media/1081/4.png" alt=""></figure>
+                            <div class="thumb-content">
+                                <h3>Jenifer Hearly</h3>
+                                <div class="designation">Newyork</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
         </div>
     </div>
 </section>
 <!--End testimonial section-->
 <!--Start latest blog area-->
-<section class="latest-blog-area sec-pding-two">
-    <div class="container">
-        <div class="sec-title text-center">
-            <p>News & Press Release</p>
-            <h1>Latest From Blog</h1>
-            <div class="border center"></div>
-        </div>
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                <div class="blog-Carousel">
-                    <!--Start single blog item-->
-                    <div class="single-blog-post">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
-                                <div class="img-holder">
-                                    <img src="~/Media/1095/lat-blog-1.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
-                                <div class="text-holder">
-                                    <div class="top clearfix">
-                                        <div class="meta-box">
-                                            <ul class="meta-info">
-                                                <li><a href="#">By Fletcher</a></li>
-                                                <li><a href="#">June 21, 2017</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h3><a class="blog-title" href="blog-single.html">We won best company award of the year 2015 & 16.</a></h3>
-                                        <p>Rationally encounter consequences that are extremely painful for your...</p>
-                                        <div class="readmore">
-                                            <a href="blog-single.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single blog item-->
-                    <!--Start single blog item-->
-                    <div class="single-blog-post">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
-                                <div class="img-holder">
-                                    <img src="~/Media/1096/lat-blog-2.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
-                                <div class="text-holder">
-                                    <div class="top clearfix">
-                                        <div class="meta-box">
-                                            <ul class="meta-info">
-                                                <li><a href="#">By Fletcher</a></li>
-                                                <li><a href="#">June 21, 2017</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h3><a class="blog-title" href="blog-single.html">Eight Pricing strategies for your digital product.</a></h3>
-                                        <p>Pursues desires obtain pain itself it  pain, but because occasionally...</p>
-                                        <div class="readmore">
-                                            <a href="blog-single.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single blog item-->
-                    <!--Start single blog item-->
-                    <div class="single-blog-post">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
-                                <div class="img-holder">
-                                    <img src="~/Media/1095/lat-blog-1.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
-                                <div class="text-holder">
-                                    <div class="top clearfix">
-                                        <div class="meta-box">
-                                            <ul class="meta-info">
-                                                <li><a href="#">By Fletcher</a></li>
-                                                <li><a href="#">June 21, 2017</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h3><a class="blog-title" href="blog-single.html">We won best company award of the year 2015 & 16.</a></h3>
-                                        <p>Rationally encounter consequences that are extremely painful for your...</p>
-                                        <div class="readmore">
-                                            <a href="blog-single.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single blog item-->
-                    <!--Start single blog item-->
-                    <div class="single-blog-post">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
-                                <div class="img-holder">
-                                    <img src="~/Media/1096/lat-blog-2.jpg" alt="Awesome Image">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
-                                <div class="text-holder">
-                                    <div class="top clearfix">
-                                        <div class="meta-box">
-                                            <ul class="meta-info">
-                                                <li><a href="#">By Fletcher</a></li>
-                                                <li><a href="#">June 21, 2017</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <h3><a class="blog-title" href="blog-single.html">Eight Pricing strategies for your digital product.</a></h3>
-                                        <p>Pursues desires obtain pain itself it  pain, but because occasionally...</p>
-                                        <div class="readmore">
-                                            <a href="blog-single.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single blog item-->
-
-                </div>
+@*<section class="latest-blog-area sec-pding-two">
+        <div class="container">
+            <div class="sec-title text-center">
+                <p>News & Press Release</p>
+                <h1>Latest From Blog</h1>
+                <div class="border center"></div>
             </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="blog-Carousel">
+                        <!--Start single blog item-->
+                        <div class="single-blog-post">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="img-holder">
+                                        <img src="~/Media/1095/lat-blog-1.jpg" alt="Awesome Image">
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="text-holder">
+                                        <div class="top clearfix">
+                                            <div class="meta-box">
+                                                <ul class="meta-info">
+                                                    <li><a href="#">By Fletcher</a></li>
+                                                    <li><a href="#">June 21, 2017</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h3><a class="blog-title" href="blog-single.html">We won best company award of the year 2015 & 16.</a></h3>
+                                            <p>Rationally encounter consequences that are extremely painful for your...</p>
+                                            <div class="readmore">
+                                                <a href="blog-single.html">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End single blog item-->
+                        <!--Start single blog item-->
+                        <div class="single-blog-post">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="img-holder">
+                                        <img src="~/Media/1096/lat-blog-2.jpg" alt="Awesome Image">
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="text-holder">
+                                        <div class="top clearfix">
+                                            <div class="meta-box">
+                                                <ul class="meta-info">
+                                                    <li><a href="#">By Fletcher</a></li>
+                                                    <li><a href="#">June 21, 2017</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h3><a class="blog-title" href="blog-single.html">Eight Pricing strategies for your digital product.</a></h3>
+                                            <p>Pursues desires obtain pain itself it  pain, but because occasionally...</p>
+                                            <div class="readmore">
+                                                <a href="blog-single.html">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End single blog item-->
+                        <!--Start single blog item-->
+                        <div class="single-blog-post">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="img-holder">
+                                        <img src="~/Media/1095/lat-blog-1.jpg" alt="Awesome Image">
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="text-holder">
+                                        <div class="top clearfix">
+                                            <div class="meta-box">
+                                                <ul class="meta-info">
+                                                    <li><a href="#">By Fletcher</a></li>
+                                                    <li><a href="#">June 21, 2017</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h3><a class="blog-title" href="blog-single.html">We won best company award of the year 2015 & 16.</a></h3>
+                                            <p>Rationally encounter consequences that are extremely painful for your...</p>
+                                            <div class="readmore">
+                                                <a href="blog-single.html">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End single blog item-->
+                        <!--Start single blog item-->
+                        <div class="single-blog-post">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="img-holder">
+                                        <img src="~/Media/1096/lat-blog-2.jpg" alt="Awesome Image">
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12">
+                                    <div class="text-holder">
+                                        <div class="top clearfix">
+                                            <div class="meta-box">
+                                                <ul class="meta-info">
+                                                    <li><a href="#">By Fletcher</a></li>
+                                                    <li><a href="#">June 21, 2017</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <h3><a class="blog-title" href="blog-single.html">Eight Pricing strategies for your digital product.</a></h3>
+                                            <p>Pursues desires obtain pain itself it  pain, but because occasionally...</p>
+                                            <div class="readmore">
+                                                <a href="blog-single.html">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End single blog item-->
 
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</section>
+    </section>*@
 <!--End latest blog area-->
 <!--Start Appointment Area-->
-<section class="appointment-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
-                <div class="appointment-img-holder clearfix">
-                    <img src="~/Media/1032/appoinment-image.jpg" alt="">
-                    <div class="subscribe-form-box">
-                        <p>Sign up us today we will send you latest news, usefull tips at your mail address.</p>
-                        <form class="newsletter-form" action="#">
-                            <input placeholder="Enter Email..." type="text">
-                            <button type="submit">Submit</button>
+@*<section class="appointment-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
+                    <div class="appointment-img-holder clearfix">
+                        <img src="~/Media/1032/appoinment-image.jpg" alt="">
+                        <div class="subscribe-form-box">
+                            <p>Sign up us today we will send you latest news, usefull tips at your mail address.</p>
+                            <form class="newsletter-form" action="#">
+                                <input placeholder="Enter Email..." type="text">
+                                <button type="submit">Submit</button>
+                            </form>
+                            <span>* Your email id is very confidential</span>
+                            <ul class="sociallinks-style-two">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12">
+                    <div class="text-holder">
+                        <div class="sec-title text-center">
+                            <p>For an Enquiry</p>
+                            <h1>Make an Appointment</h1>
+                            <div class="border center"></div>
+                        </div>
+                        <form class="appointment-form-box">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="form_name" value="" placeholder="Your Name*" required="">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="form_email" value="" placeholder="Email address*" required="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="form_phone" value="" placeholder="Phone*">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="selectmenu">
+                                        <option selected="selected">Select Service</option>
+                                        <option>Business Growth</option>
+                                        <option>Sustainability</option>
+                                        <option>Performance</option>
+                                        <option>Advanced Analytics</option>
+                                        <option>Organization</option>
+                                        <option>Customer Insights</option>
+                                        <option>Marketing Plan</option>
+                                        <option>Online Consulting</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn-one" type="submit">Submit Now</button>
+                                </div>
+                            </div>
                         </form>
-                        <span>* Your email id is very confidential</span>
-                        <ul class="sociallinks-style-two">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12">
-                <div class="text-holder">
-                    <div class="sec-title text-center">
-                        <p>For an Enquiry</p>
-                        <h1>Make an Appointment</h1>
-                        <div class="border center"></div>
-                    </div>
-                    <form class="appointment-form-box">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" name="form_name" value="" placeholder="Your Name*" required="">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" name="form_email" value="" placeholder="Email address*" required="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" name="form_phone" value="" placeholder="Phone*">
-                            </div>
-                            <div class="col-md-6">
-                                <select class="selectmenu">
-                                    <option selected="selected">Select Service</option>
-                                    <option>Business Growth</option>
-                                    <option>Sustainability</option>
-                                    <option>Performance</option>
-                                    <option>Advanced Analytics</option>
-                                    <option>Organization</option>
-                                    <option>Customer Insights</option>
-                                    <option>Marketing Plan</option>
-                                    <option>Online Consulting</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <button class="btn-one" type="submit">Submit Now</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>*@
 <!--End Appointment Area-->
 <!--Start Brand area-->
-<section class="brand-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4 col-lg-7 col-md-12">
-                <div class="brand-text-box">
-                    <div class="title">
-                        <h3>We working with right<br> partners.</h3>
-                    </div>
-                    <div class="text">
-                        <p>Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born  complete account of the system.</p>
-                        <a href="#">Join With Us</a>
+@*<section class="brand-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-7 col-md-12">
+                    <div class="brand-text-box">
+                        <div class="title">
+                            <h3>We working with right<br> partners.</h3>
+                        </div>
+                        <div class="text">
+                            <p>Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born  complete account of the system.</p>
+                            <a href="#">Join With Us</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-8 col-lg-12 col-md-12">
-                <ul class="brand">
-                    <!--Start single item-->
-                    <li class="single-item">
-                        <a href="#"><img src="~/Media/1111/1.png" alt="Awesome Brand Image"></a>
-                        <div class="text">
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                            <a class="visit-site" href="#">Visit Website</a>
-                        </div>
-                    </li>
-                    <!--End single item-->
-                    <!--Start single item-->
-                    <li class="single-item">
-                        <a href="#"><img src="~/Media/1112/2.png" alt="Awesome Brand Image"></a>
-                        <div class="text">
-                            <p>The master-builder of human happiness one avoids pleasure itself, because it is pleasure, but because those who do not know pursue.</p>
-                            <a class="visit-site" href="#">Visit Website</a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="col-xl-8 col-lg-12 col-md-12">
+                    <ul class="brand">
+                        <!--Start single item-->
+                        <li class="single-item">
+                            <a href="#"><img src="~/Media/1111/1.png" alt="Awesome Brand Image"></a>
+                            <div class="text">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <a class="visit-site" href="#">Visit Website</a>
+                            </div>
+                        </li>
+                        <!--End single item-->
+                        <!--Start single item-->
+                        <li class="single-item">
+                            <a href="#"><img src="~/Media/1112/2.png" alt="Awesome Brand Image"></a>
+                            <div class="text">
+                                <p>The master-builder of human happiness one avoids pleasure itself, because it is pleasure, but because those who do not know pursue.</p>
+                                <a class="visit-site" href="#">Visit Website</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>*@
 <!--End Brand area-->
 <!--Start slogan area-->
 <section class="slogan-area" style="background-image:url(Media/1134/slogan-bg.jpg);">
