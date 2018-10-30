@@ -1707,7 +1707,18 @@ select:focus {
 	font-weight:400;
 	text-transform:capitalize;
 }
-.testimonial-section .client-thumb-outer .thumb-item .thumb-box {
+/*.testimonial-section .client-thumb-outer .thumb-item .thumb-box {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 auto;
+    -o-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    transform: scale(0.8, 0.8);
+}*/
+.testimonial-section .thumb-item .thumb-box {
     width: 90px;
     height: 90px;
     cursor: pointer;
